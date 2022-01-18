@@ -1,0 +1,30 @@
+.client-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-list__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid $gray-color-2;
+    fill: $gray-color-2;
+
+    transition: border 250ms $animation-timing, fill 250ms $animation-timing;
+
+    &:hover,
+    &:focus {
+        border-color: $blue-color;
+        fill: $blue-color;
+    }
+}
+
+.client-list__card {
+    .client-list & + & {
+        margin-left: 30px;
+    }
+}

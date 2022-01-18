@@ -1,0 +1,64 @@
+.footer-form {
+    display: flex;
+    margin-left: auto;
+    align-items: flex-end;
+}
+
+.footer-subscribe {
+    margin-right: 12px;
+}
+
+.footer-subscribe__title {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+}
+
+.footer-subscribe__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2f303a;
+    color: $white-color;
+
+    padding-left: 16px;
+}
+
+
+.button-subscribe {
+    background-color: $blue-color;
+    color: $white-color;
+    fill: $white-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: transparent;
+    justify-content: center;
+    transition: background-color $animation-timing;
+        box-shadow: $animation-timing;
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.button-subscribe__icon {
+    margin-left: 10px;
+}

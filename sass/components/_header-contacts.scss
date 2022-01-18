@@ -1,0 +1,36 @@
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.header-contacts__icon {
+    margin-right: 10px;
+}
+
+.header-contacts__link {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $gray-color;
+    fill: $gray-color;
+
+    transition: color 250ms $animation-timing;
+
+    &:hover,
+    &:focus {
+        color: $blue-color;
+        fill: $blue-color;
+    }
+}
+
+
+.header-contacts__item {
+    .header-contacts & + & {
+        margin-left: 50px;    
+    }
+}

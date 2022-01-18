@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: $white-color;
+    color: $almost-black-color;
+}
+
+* {
+    box-sizing: inherit;
+
+    &::before,
+    &::after {
+    box-sizing: inherit;
+    }
+}
+
+a {
+   text-decoration: none; 
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
