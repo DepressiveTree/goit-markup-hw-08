@@ -1,18 +1,29 @@
 .footer-block__social {
     display: inline-block;
-    margin-left: 70px;
+    
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 102px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 206px;
+        height: 80px;
+        margin-right: 93px;
+    }
 }
 
 .footer-social {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer-social__title {
     margin-top: 0;
     margin-bottom: 20px;
-    font-style: normal;
+
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;

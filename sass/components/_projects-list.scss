@@ -1,16 +1,32 @@
 .projects-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-bottom: -30px;
+    }
 }
 
 .projects-list__card {
-    margin-top: 30px;
-    margin-left: 30px;
-    flex-basis: calc(100%/3 - 30px);
+    width: 100%;
 
-    box-sizing: border-box;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px){
+        width: 450px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 3 - 30px);
+    }   
 }
 
 .projects-list__link {
@@ -26,7 +42,7 @@
 
 .projects-list__thumb {
     position: relative;
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 .projects-list__overlay {
@@ -44,7 +60,7 @@
     .projects-list__link:hover & {
         transform: translateY(0);
         opacity: 1;
-    }
+    }    
 }
 
 .projects-list__description {
@@ -63,6 +79,16 @@
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
+
+    @media screen and (min-width: 480px) and (max-width: 767px){
+        width: 450px;
+    }
+}
+
+.projects-title--small {
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        padding-bottom: 56px;        
+    }
 }
 
 .projects-title__name {
@@ -76,7 +102,6 @@
 }
 
 .projects-title__type {
-    font-weight: normal;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;

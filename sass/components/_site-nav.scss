@@ -1,7 +1,9 @@
 .site-nav {
     display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
+
+    @media screen and (max-width: 767px){
+        display: none;
+    }    
 }
 
 .site-nav__item {

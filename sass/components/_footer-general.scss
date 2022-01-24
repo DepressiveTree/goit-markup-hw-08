@@ -3,11 +3,26 @@
     padding-bottom: 60px;
 
     background: #2F303A;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .footer-block {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 .footer-logo {

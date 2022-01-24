@@ -1,5 +1,5 @@
 .logo {
-    margin-right: 93px;
+    margin-right: 0px;
 
     font-family: Raleway;
     font-weight: bold;
@@ -7,6 +7,14 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: $blue-color;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }    
 }
 
 .logo__dark {
